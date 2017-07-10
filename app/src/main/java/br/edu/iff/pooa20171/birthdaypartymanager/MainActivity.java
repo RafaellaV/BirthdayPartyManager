@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView bolas;
     private TextView texto1;
+    private Button btCP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NovaSenhaActivity.class); startActivity(intent); }
+        });
+
+        btCP = (Button) findViewById(R.id.btCadastroInicial);
+        btCP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(MainActivity.this, CadastroPromoterActivity.class); startActivity(intent2); }
         });
         }
 

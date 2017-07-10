@@ -9,6 +9,7 @@
     <string name="title_activity_nova_senha">NovaSenha</string>
     <string name="novaSenha">Para recuperar sua senha, informe o seu e-mail
         abaixo para que sejam enviadas as instruções de recuperação:</string>
-
+    <string name="title_activity_cadastro_promoter">CadastroPromoterActivity</string>
+    <string name="title_activity_inicial">InicialActivity</string>
 
 </resources>

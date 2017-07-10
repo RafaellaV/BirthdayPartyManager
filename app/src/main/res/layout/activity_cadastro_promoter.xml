@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.iff.pooa20171.birthdaypartymanager.CadastroPromoterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_green_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Cadastro Inicial" />/>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:id="@+id/etCPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etNome"
+            android:ems="10"
+            android:hint="CPF"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/etTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etCPF"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/tvSexo"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginTop="190dp"
+            android:layout_weight="1"
+            android:text="Sexo:"
+            android:textSize="18sp"
+            app:layout_anchorGravity="center_vertical|center_horizontal" />
+
+        <RadioGroup
+            android:id="@+id/rG"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginTop="220dp"
+            app:layout_anchorGravity="center_vertical|left">
+
+            <RadioButton
+                android:id="@+id/rbFeminino"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="Feminino"
+                android:textSize="14sp"
+                app:layout_anchor="@+id/include2"
+                app:layout_anchorGravity="center_vertical|left" />
+
+            <RadioButton
+                android:id="@+id/rbMasculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etTel"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etTel"
+            android:ems="10"
+            android:hint="Endereço"
+            android:inputType="text"
+            android:layout_marginTop="100dp"/>
+
+        <EditText
+            android:id="@+id/etCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etEndereco"
+            android:ems="10"
+            android:hint="Cidade"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="370dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="410dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_marginTop="500dp"/>
+
+        <Button
+            android:id="@+id/btEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:layout_marginTop="500dp"
+            android:layout_marginLeft="100dp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/content_cadastro_promoter" />
+
+</android.support.design.widget.CoordinatorLayout>

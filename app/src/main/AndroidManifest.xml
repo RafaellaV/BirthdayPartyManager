@@ -28,6 +28,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.edu.iff.pooa20171.birthdaypartymanager.MainActivity" />
         </activity>
+        <activity
+            android:name=".CadastroPromoterActivity"
+            android:label="@string/title_activity_cadastro_promoter"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.edu.iff.pooa20171.birthdaypartymanager.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InicialActivity"
+            android:label="@string/title_activity_inicial"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
