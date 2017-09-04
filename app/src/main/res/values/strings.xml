@@ -11,5 +11,11 @@
         abaixo para que sejam enviadas as instruções de recuperação:</string>
     <string name="title_activity_cadastro_promoter">CadastroPromoterActivity</string>
     <string name="title_activity_inicial">InicialActivity</string>
+    <string name="title_activity_cadastro_festa">CadastroFestaActivity</string>
+    <string name="title_activity_festa">FestaActivity</string>
+    <string name="title_activity_cadastro_item">CadastroItemActivity</string>
+    <string name="title_activity_cadastro_convidado">CadastroConvidadoActivity</string>
+    <string name="title_activity_convidado">ConvidadoActivity</string>
+    <string name="title_activity_item">ItemActivity</string>
 
 </resources>
