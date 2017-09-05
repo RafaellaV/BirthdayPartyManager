@@ -70,15 +70,6 @@
                 android:value="br.edu.iff.pooa20171.birthdaypartymanager.activity.CadastroFestaActivity" />
         </activity>
         <activity
-            android:name=".activity.ConvidadoActivity"
-            android:label="@string/title_activity_convidado"
-            android:parentActivityName=".activity.CadastroFestaActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="br.edu.iff.pooa20171.birthdaypartymanager.activity.CadastroFestaActivity" />
-        </activity>
-        <activity
             android:name=".activity.ItemActivity"
             android:label="@string/title_activity_item"
             android:parentActivityName=".activity.InicialActivity"
@@ -86,6 +77,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.edu.iff.pooa20171.birthdaypartymanager.activity.InicialActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ConvidadoActivity"
+            android:label="@string/title_activity_convidado"
+            android:parentActivityName=".activity.CadastroFestaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.edu.iff.pooa20171.birthdaypartymanager.activity.CadastroFestaActivity" />
         </activity>
     </application>
 
